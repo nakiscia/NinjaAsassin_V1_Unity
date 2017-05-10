@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2DScroller_21_03", "Assembly-CSharp-firstpass.csproj", "{65CD6B61-8EA6-3EBF-0461-113ECDDBF446}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2DScroller_21_03", "Assembly-CSharp.csproj", "{53BFEBB6-81F1-25C6-963C-09759E89378A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2DScroller_21_03", "Assembly-CSharp-Editor.csproj", "{29024D49-592F-3374-578F-6346BE477D53}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65CD6B61-8EA6-3EBF-0461-113ECDDBF446}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65CD6B61-8EA6-3EBF-0461-113ECDDBF446}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65CD6B61-8EA6-3EBF-0461-113ECDDBF446}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65CD6B61-8EA6-3EBF-0461-113ECDDBF446}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53BFEBB6-81F1-25C6-963C-09759E89378A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53BFEBB6-81F1-25C6-963C-09759E89378A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53BFEBB6-81F1-25C6-963C-09759E89378A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53BFEBB6-81F1-25C6-963C-09759E89378A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29024D49-592F-3374-578F-6346BE477D53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29024D49-592F-3374-578F-6346BE477D53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29024D49-592F-3374-578F-6346BE477D53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29024D49-592F-3374-578F-6346BE477D53}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
