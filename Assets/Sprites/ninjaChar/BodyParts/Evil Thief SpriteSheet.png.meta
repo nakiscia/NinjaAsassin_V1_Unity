@@ -1,0 +1,336 @@
+fileFormatVersion: 2
+guid: 7531e9f3eccb4d64e9d96930d3a32536
+timeCreated: 1492630629
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Evil Thief SpriteSheet_0
+    21300002: l_foot_lower
+    21300004: l_arm_upper
+    21300006: c_body_upper
+    21300008: c_head
+    21300010: r_arm_upper
+    21300012: c_body_lower
+    21300014: r_leg
+    21300016: l_leg
+    21300018: r_hand
+    21300020: c_hips
+    21300022: l_hand
+    21300024: r_arm_lower
+    21300026: l_arm_lower
+    21300028: r_foot_upper
+    21300030: drop_shadow
+    21300032: r_hand_inside
+    21300034: r_foot_lower
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Evil Thief SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 878
+        width: 528
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: l_foot_lower
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 878
+        width: 63
+        height: 43
+      alignment: 9
+      pivot: {x: 0.5, y: 0.9958013}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: l_arm_upper
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 746
+        width: 112
+        height: 174
+      alignment: 9
+      pivot: {x: 0.48269543, y: 0.9566861}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: c_body_upper
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 493
+        width: 346
+        height: 355
+      alignment: 9
+      pivot: {x: 0.53921074, y: 0.02502132}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: c_head
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 491
+        width: 248
+        height: 298
+      alignment: 9
+      pivot: {x: 0.26554894, y: 0.16180256}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: r_arm_upper
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 541
+        width: 109
+        height: 174
+      alignment: 9
+      pivot: {x: 0.50000054, y: 0.9455475}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: c_body_lower
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 336
+        width: 245
+        height: 127
+      alignment: 9
+      pivot: {x: 0.5158215, y: 0.94256544}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: r_leg
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 243
+        width: 144
+        height: 209
+      alignment: 9
+      pivot: {x: 0.33848932, y: 0.9358477}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: l_leg
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 243
+        width: 144
+        height: 209
+      alignment: 9
+      pivot: {x: 0.6749704, y: 0.9173009}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: r_hand
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 417
+        width: 96
+        height: 93
+      alignment: 9
+      pivot: {x: 0.50000066, y: 1.021003}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: c_hips
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 101
+        width: 216
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: l_hand
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 297
+        width: 92
+        height: 90
+      alignment: 9
+      pivot: {x: 0.4578665, y: 0.93069595}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: r_arm_lower
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 75
+        width: 104
+        height: 138
+      alignment: 9
+      pivot: {x: 0.44409296, y: 0.94942164}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: l_arm_lower
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 75
+        width: 104
+        height: 138
+      alignment: 9
+      pivot: {x: 0.518636, y: 0.93537724}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: r_foot_upper
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 96
+        width: 91
+        height: 117
+      alignment: 9
+      pivot: {x: 0.5425965, y: 0.83130455}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: drop_shadow
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 156
+        width: 78
+        height: 111
+      alignment: 9
+      pivot: {x: 0.40060896, y: 0.9190553}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: r_hand_inside
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 91
+        height: 71
+      alignment: 9
+      pivot: {x: 0.5212985, y: 0.90946454}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: r_foot_lower
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 25
+        width: 81
+        height: 46
+      alignment: 9
+      pivot: {x: 0.09323214, y: 0.7527992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
