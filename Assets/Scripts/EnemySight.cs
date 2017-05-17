@@ -29,7 +29,6 @@ public class EnemySight : MonoBehaviour {
 	void ResetValues()
 	{
 		_enemy.maxSpeed = 6;
-		_enemy.anim.SetFloat ("runspeed", 0);
 		_enemy.anim.SetFloat ("speed", 0);
 
 	}

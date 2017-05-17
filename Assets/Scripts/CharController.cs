@@ -50,7 +50,9 @@ public class CharController : CharacterController {
 		if (grounded&&rg.velocity.y==0) {
             
             grounded = !grounded;
-            rg.AddForce(new Vector2(0, jumpHeight));
+            Vector2 jumpForce = new Vector2(rg.velocity.x, jumpHeight);
+
+            rg.velocity = jumpForce;
             HandleJump();
 		}
 
