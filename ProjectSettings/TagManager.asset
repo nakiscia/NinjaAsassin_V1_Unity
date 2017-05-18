@@ -9,6 +9,8 @@ TagManager:
   - Sword
   - PatrollingEdge
   - EyeSight
+  - Arrow
+  - EnemyArrow
   layers:
   - Default
   - TransparentFX

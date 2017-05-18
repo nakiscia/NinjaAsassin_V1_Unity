@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -25,10 +26,19 @@ public class Enemy : CharacterController {
 
 	public GameObject Target {get;set;}
 
+    public override bool isDead
+    {
+        get
+        {
+
+            return health <= 0;
+        }
+    }
 
 
-	// Use this for initialization
-	public override void Start () {
+
+    // Use this for initialization
+    public override void Start () {
 
 		base.Start ();
 		ChangeState(new IdleState());
@@ -38,8 +48,12 @@ public class Enemy : CharacterController {
 	// Update is called once per frame
 	void Update () 
 	{
-		currentState.Execute ();
-		LookAtTarget ();
+
+        if (!isDead)
+        {
+            currentState.Execute();
+            LookAtTarget();
+        }
 
 	}
 
@@ -58,9 +72,9 @@ public class Enemy : CharacterController {
 
 	}
 
-	void OnTriggerEnter2D(Collider2D other)
+	public override void OnTriggerEnter2D(Collider2D other)
 	{
-
+        base.OnTriggerEnter2D(other);
 		currentState.OnTriggerEnter (other);
 
 	}
@@ -100,7 +114,20 @@ public class Enemy : CharacterController {
 		}
 
 	}
-		
 
+    public override IEnumerator TakeDamage()
+    {
+        health -= 10;
 
+        if (!isDead)
+        {
+            anim.SetTrigger("damage");
+        }
+        else
+        {
+            anim.SetTrigger("die");
+            yield return null;
+        }
+
+    }
 }

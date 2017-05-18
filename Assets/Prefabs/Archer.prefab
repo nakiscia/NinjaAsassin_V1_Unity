@@ -332,6 +332,7 @@ MonoBehaviour:
   anim: {fileID: 95173729936656412}
   rg: {fileID: 50079584264665298}
   attacking: 0
+  health: 100
   arrowPrefab: {fileID: 1307646698208630, guid: aca85e6fa52b6654aadede0294f2304a,
     type: 2}
   enemyType: 2

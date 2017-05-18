@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterController : MonoBehaviour {
+public abstract class CharacterController : MonoBehaviour {
 
     // Base class of the Characters. 
 
@@ -11,6 +11,11 @@ public class CharacterController : MonoBehaviour {
 	public Animator anim;
 	public Rigidbody2D rg;
 	public bool attacking;
+
+    [SerializeField]
+    protected int health;
+
+    public abstract bool isDead { get; }
 
 
     // Use this for initialization
@@ -68,8 +73,16 @@ public class CharacterController : MonoBehaviour {
 
 	}
 
+    public abstract IEnumerator TakeDamage(); 
 
+    public virtual void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Arrow")
+        {
+           StartCoroutine(TakeDamage());
+        }
 
+    }
 
 
 

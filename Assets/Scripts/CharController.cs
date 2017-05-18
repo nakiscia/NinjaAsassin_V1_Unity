@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityStandardAssets.CrossPlatformInput;
-
+using System;
 
 public class CharController : CharacterController {
 
@@ -14,6 +14,16 @@ public class CharController : CharacterController {
 	float groundRadius = 5f;
 	public LayerMask whatisGround;
     bool jumping=false;
+
+    public override bool isDead
+    {
+        get
+        {
+
+            return health <= 0;
+            
+        }
+    }
 
 
 
@@ -101,8 +111,10 @@ public class CharController : CharacterController {
 
     }
 
+    public override IEnumerator TakeDamage()
+    {
 
+        yield return null;
 
-
-
+    }
 }
