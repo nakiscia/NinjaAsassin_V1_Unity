@@ -21,6 +21,9 @@ GameObject:
   - component: {fileID: 4527481518686566}
   - component: {fileID: 212224767513681788}
   - component: {fileID: 68227929392362158}
+  - component: {fileID: 68010898112723362}
+  - component: {fileID: 114690386132266490}
+  - component: {fileID: 114459244062252426}
   m_Layer: 8
   m_Name: curve_Ne_platform
   m_TagString: Untagged
@@ -34,13 +37,34 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1168918716480794}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.8, y: 6.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 5.13}
+--- !u!68 &68010898112723362
+EdgeCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1168918716480794}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.23, y: -0.61}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -3.09, y: -1.22}
+  - {x: -1.08, y: 0}
+  - {x: 0.07, y: 0.53}
+  - {x: 1.06, y: 0.65}
+  - {x: 2.27, y: 0.74}
+  - {x: 3.57, y: 0.74}
 --- !u!68 &68227929392362158
 EdgeCollider2D:
   m_ObjectHideFlags: 1
@@ -62,6 +86,32 @@ EdgeCollider2D:
   - {x: 1.06, y: 0.65}
   - {x: 2.27, y: 0.74}
   - {x: 3.43, y: 0.74}
+--- !u!114 &114459244062252426
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1168918716480794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4c6a3edfb3ec94cbe96e916e6405c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  platformCollider: {fileID: 0}
+  platformTrigger: {fileID: 0}
+--- !u!114 &114690386132266490
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1168918716480794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4c6a3edfb3ec94cbe96e916e6405c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  platformCollider: {fileID: 68227929392362158}
+  platformTrigger: {fileID: 68010898112723362}
 --- !u!212 &212224767513681788
 SpriteRenderer:
   m_ObjectHideFlags: 1

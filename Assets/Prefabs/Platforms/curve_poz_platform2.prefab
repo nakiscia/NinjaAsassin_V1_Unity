@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4105790890526032}
   - component: {fileID: 212461949195540848}
   - component: {fileID: 68746774002232450}
+  - component: {fileID: 68715383379527714}
+  - component: {fileID: 114205601084848956}
   m_Layer: 8
   m_Name: curve_poz_platform2
   m_TagString: Untagged
@@ -34,13 +36,33 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1682215894824962}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9.46, y: 8.31, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &68715383379527714
+EdgeCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1682215894824962}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.56}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -3.33, y: -0.57}
+  - {x: -0.11, y: -0.4}
+  - {x: 1.05, y: -0.04}
+  - {x: 2.41, y: 0.75}
+  - {x: 3.44, y: 1.55}
 --- !u!68 &68746774002232450
 EdgeCollider2D:
   m_ObjectHideFlags: 1
@@ -61,6 +83,19 @@ EdgeCollider2D:
   - {x: 1.05, y: -0.04}
   - {x: 2.41, y: 0.75}
   - {x: 3.44, y: 1.55}
+--- !u!114 &114205601084848956
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1682215894824962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4c6a3edfb3ec94cbe96e916e6405c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  platformCollider: {fileID: 68746774002232450}
+  platformTrigger: {fileID: 68715383379527714}
 --- !u!212 &212461949195540848
 SpriteRenderer:
   m_ObjectHideFlags: 1

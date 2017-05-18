@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4385886661423602}
   - component: {fileID: 212291769756976858}
   - component: {fileID: 68307422840287276}
+  - component: {fileID: 68950010633165786}
+  - component: {fileID: 114860370495655952}
   m_Layer: 8
   m_Name: short2_strait_platform2
   m_TagString: Untagged
@@ -34,9 +36,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1334489327184746}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.58, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 17.89, y: 6.66, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -56,8 +58,38 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
+  - {x: -2.38, y: 0.23}
+  - {x: 2.36, y: 0.12}
+--- !u!68 &68950010633165786
+EdgeCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1334489327184746}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.41}
+  m_EdgeRadius: 0
+  m_Points:
   - {x: -2.06, y: 0.23}
   - {x: 2.02, y: 0.12}
+--- !u!114 &114860370495655952
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1334489327184746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4c6a3edfb3ec94cbe96e916e6405c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  platformCollider: {fileID: 68307422840287276}
+  platformTrigger: {fileID: 68950010633165786}
 --- !u!212 &212291769756976858
 SpriteRenderer:
   m_ObjectHideFlags: 1

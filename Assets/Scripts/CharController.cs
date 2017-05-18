@@ -13,6 +13,7 @@ public class CharController : CharacterController {
 	public Transform groundCheck;
 	float groundRadius = 5f;
 	public LayerMask whatisGround;
+    bool jumping=false;
 
 
 
@@ -24,9 +25,6 @@ public class CharController : CharacterController {
         base.Start();
     }
 
-	void Update(){
-        
-    }
 
 
 	void FixedUpdate () {
@@ -46,15 +44,8 @@ public class CharController : CharacterController {
 	public void jumpMobileEvent()
 	{
 
-		// Jump key
-		if (grounded&&rg.velocity.y==0) {
-            
-            grounded = !grounded;
-            Vector2 jumpForce = new Vector2(rg.velocity.x, jumpHeight);
+        jumping = true;
 
-            rg.velocity = jumpForce;
-            HandleJump();
-		}
 
 	}
 
@@ -81,6 +72,8 @@ public class CharController : CharacterController {
                 flipTheHero();
 
         }
+
+
     }
 
     public void attackMobileEvent()
@@ -94,8 +87,19 @@ public class CharController : CharacterController {
 		grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatisGround);
 		anim.SetBool ("grounded", grounded);
 		anim.SetFloat ("vspeed", rg.velocity.y);
-		
-	}
+
+
+        if (grounded && jumping)
+        {
+
+            grounded = !grounded;
+            jumping = false;
+            Vector2 jumpForce = new Vector2(rg.velocity.x, jumpHeight);
+            rg.velocity = jumpForce;
+            HandleJump();
+        }
+
+    }
 
 
 
